@@ -1,0 +1,37 @@
+.btn {
+    padding: 1px 23px;
+  }
+  
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #c471f5;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1))
+  }
+  .navbar {
+    padding: 5px 15px; /* Adjust the padding as needed */
+    height: 50px !important; /* Set the desired height */
+  }
+  
+  .navbar-toggler {
+    padding: 5px 10px; /* Adjust the padding for the toggler button */
+  }
+  .navbar-nav .nav-link .fa-lg {
+    font-size: 20px; /* Adjust the font size as needed */
+    
+  }
+  /* Set the color of the icons to black */
+.navbar-nav .nav-link .fa {
+    color: black; /* Change to your desired color */
+  }
+  a{
+    color: black;
+  }
+  .user-image {
+    max-width: 10%; /* Reduce max-width for the image */
+    max-height: 10%; /* Reduce max-height for the image */
+  }

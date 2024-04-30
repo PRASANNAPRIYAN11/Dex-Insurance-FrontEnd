@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card{
+  margin-bottom: 10px; /* Reduce space between cards */
+  border: 1px solid #dee2e6; /* Border for cards */
+  border-radius: 5px; /* Rounded corners for cards */
+  padding: 10px; /* Reduce padding inside card body */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.user-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  
+}
+
+.text p {
+  text-align: center; /* Center the text within the paragraph */
+  font-size: 25px; /* Reduce font size for welcome text */
+  margin-top: 5px; /* Reduce top margin for welcome text */
+  margin-bottom: 15px; /* Reduce bottom margin for welcome text */
+  padding: 7px;
+}
+
+.user-image {
+  max-width: 10%; /* Reduce max-width for the image */
+  max-height: 10%; /* Reduce max-height for the image */
+}
+
+.details {
+  padding: 5px; /* Reduce padding inside card body */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.card-title {
+  margin-bottom: 10px; /* Reduce bottom margin for card title */
+  font-size: 14px; /* Reduced font size for card title */
+  color: #007bff; /* Blue color for card titles */
+  margin-left: 7px;
+}
+
+.card-text {
+  margin-bottom: 0; /* Reduce bottom margin for card text */
+  padding: 7px;
+  font-size: 13px; /* Reduced font size for card text */
+  
+}
+
+/* Adjust Academic Details card */
+
+
+.card.academic-details .card-body .col-md-6 {
+  padding-left: 0; /* Remove padding to align content to the left */
+}
+.red-text{
+  color: red;
+}
+.custom-button {
+  border: 2px dotted #007bff; /* Blue dotted border */
+  color: #007bff; /* Blue text color */
+  background-color: transparent; /* Transparent background */
+  padding: 6px 13px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners for button */
+  font-size: 10px; /* Font size for button text */
+  cursor: pointer; /* Cursor style */
+  margin-top: 7px;
+}
+
+.custom-button:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #fff; /* White text color on hover */
+}
+.help-centre .card-body {
+  border: 1px dotted blue;
+  padding: 1px;
+  max-height: 300px; /* Set a maximum height for the card body */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+  max-width: 200px;
+  border-radius: 5px;
+  margin-left: 19px;
+  margin-top: 13px;
+  font-size: 10px;
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  color: white;
+}
+.help-centre {
+  margin-bottom: 10px; /* Reduce space between cards */
+  border: 1px solid #dee2e6; /* Border for cards */
+  border-radius: 5px; /* Rounded corners for cards */
+  padding: 10px; /* Reduce padding inside card body */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  max-width: 500px;
+}
+.help-centre .card-title{
+  margin-left: 20px;
+  margin-top: 13px;
+}
+.help-text{
+  margin-left: 20px;
+  margin-top: 13px;
+  font-size: 11px;
+}
+.academic-details-right {
+  margin-top: 10px;
+}
+
+.academic-details-right .card-body {
+  text-align: right; /* Align text to the right */
+}
+.fa-facebook{
+  color: blue;
+}
+.fa-twitter{
+  color: skyblue;
+}
+.fa-instagram{
+  color: rgb(234, 33, 140);
+}
+.fa-youtube{
+  color: red;
+}
+.fa-linkedin{
+  color: navy;
+}
+.social-icons {
+  display: flex;
+}
+
+.social-icons i {
+  margin-top: 15px;
+  margin-right: 35px; /* Add space between icons */
+  margin-left: 15px;
+}

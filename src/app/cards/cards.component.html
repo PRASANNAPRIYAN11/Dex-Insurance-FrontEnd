@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Payment Detail Register</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Add Card Details</h5>
+          <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="cardholderName">Cardholder Name:</label>
+              <input type="text" id="cardholderName" formControlName="cardholderName" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="cardNumber">Card Number:</label>
+              <input type="text" id="cardNumber" formControlName="cardNumber" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="expiryDate">Expiry Date:</label>
+              <input type="text" id="expiryDate" formControlName="expiryDate" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" formControlName="cvv" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" >Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Cards List</h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Cardholder Name</th>
+                <th>Card Number</th>
+                <th>Expiry</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let card of cardsList" (click)="populateFormData(card)">
+                <td>{{ card.userName }}</td>
+                <td>{{ card.cardNumber }}</td>
+                <td>{{ card.expiry }}</td>
+                <td><button (click)="deleteCard(card)" class="btn btn-danger">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

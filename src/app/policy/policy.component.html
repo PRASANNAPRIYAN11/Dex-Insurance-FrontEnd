@@ -1,0 +1,99 @@
+<app-navbar></app-navbar>
+
+<body>
+  <div class="row user-card">
+
+    <div *ngIf="userDetails" class="col-md-6 user-details-container">
+      <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="text d-flex justify-content-center align-items-center">
+          <p><strong>WELCOME TO THE INSURANCE DASHBOARD</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body d-flex align-items-center">
+            <img
+              src="./assets/image (2).png"
+              alt="User Image"
+              class="user-image"
+            />
+            <div class="details ml-3">
+              <p class="card-text">
+                <strong
+                  ><span class="red-text">Name:&nbsp;</span>
+                  {{ userDetails.userName }}</strong
+                >
+                <br />
+                <strong
+                  ><span class="red-text">Policy:&nbsp;</span>
+                  {{ userDetails.polic | uppercase }}</strong
+                >
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="card academic-details">
+          <div class="card-body">
+            <h3 class="card-title">Policy Details</h3>
+            <p class="card-text">
+              <strong>Insurer:&nbsp;</strong> Niva Bupa Insurance Company
+              Limited
+            </p>
+            <p class="card-text">
+              <strong>TPA:&nbsp;</strong> Niva Bupa Insurance Company Limited
+            </p>
+            <p class="card-text"><strong>Policy Period:&nbsp; </strong> 19-6-2020 to 18-6-2025</p>
+            <button class="custom-button" (click)="navigateToCardsPage()">Go To Payments</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="help-centre card">
+          <h3 class="card-title">Help Centre</h3>
+          <div class="card-body">
+            <p class="card-text">
+              <strong>Cynthia-Account<br />Manager</strong
+              ><br />74334944928<br />Cynthia&#64;gmail.com
+            </p>
+          </div>
+          <p class="help-text">
+            <strong>Tollfree Helpline</strong
+            ><br />1800-1034-569<br />servicehelpdest&#64;gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4 offset-8">
+        <div class="card academic-details">
+          <div class="card-body">
+            <h3 class="card-title">Social Media</h3>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,43 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.card-body{
+    align-items: center;
+    text-align: center;
+    background-color:transparent;
+}
+.card-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.header-item {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-detail {
+    padding: 10px;
+    text-align: center;
+    margin: 5px; 
+}
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
